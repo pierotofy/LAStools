@@ -77,12 +77,8 @@ endif()
 
 include_directories(. ../dll)
 
-add_library(laszip SHARED ${files})
+add_library(laszip STATIC ${files})
 
-install(TARGETS laszip 
-	RUNTIME DESTINATION bin/
-	LIBRARY DESTINATION lib/
-)
 
 
 
